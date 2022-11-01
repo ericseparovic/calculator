@@ -6,10 +6,11 @@ function changeTheme(e) {
   let position = e.target.id;
   const positions = buttons.querySelectorAll(".switch");
   const body = document.querySelector("body");
-  changePositionToggle(position, positions);
+  changePositionSwitch(position, positions);
+  changeColorsTheme(position, body);
 }
 
-function changePositionToggle(position, positions) {
+function changePositionSwitch(position, positions) {
   if (position === "" || positions === "") {
     return;
   }
@@ -22,4 +23,23 @@ function changePositionToggle(position, positions) {
       element.classList.remove("active-theme");
     }
   });
+}
+
+function changeColorsTheme(position, body) {
+  // Theme 1
+  if (position === "1") {
+    body.classList.remove("theme2", "theme3");
+  }
+
+  // Theme 2
+  if (position === "2") {
+    body.classList.add("theme2");
+    body.classList.remove("theme3");
+  }
+
+  // Theme 3
+  if (position === "3") {
+    body.classList.add("theme3");
+    body.classList.remove("theme2");
+  }
 }
