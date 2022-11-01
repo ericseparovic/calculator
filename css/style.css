@@ -20,11 +20,23 @@ body {
   height: 100vh;
   font-family: "Spartan", sans-serif;
 }
+body.theme2 {
+  background-color: hsl(0deg, 0%, 90%);
+}
+body.theme3 {
+  background-color: hsl(268deg, 47%, 21%);
+}
 
 .container {
   width: 420px;
   height: 550px;
   background-color: hsl(222deg, 26%, 31%);
+}
+body.theme2 .container {
+  background-color: hsl(0deg, 0%, 90%);
+}
+body.theme3 .container {
+  background-color: hsl(268deg, 47%, 21%);
 }
 
 .header {
@@ -34,9 +46,21 @@ body {
   height: 80px;
   background-color: hsl(222deg, 26%, 31%);
 }
+body.theme2 .header {
+  background-color: hsl(0deg, 0%, 90%);
+}
+body.theme3 .header {
+  background-color: hsl(268deg, 47%, 21%);
+}
 .header h1 {
   color: white;
   font-size: 25px;
+}
+body.theme2 .header h1 {
+  color: black;
+}
+body.theme3 .header h1 {
+  color: hsl(52deg, 100%, 62%);
 }
 .header .header-theme-button {
   display: flex;
@@ -51,10 +75,15 @@ body {
   text-transform: uppercase;
   font-size: 10px;
 }
+body.theme2 .header .header-theme-button p {
+  color: black;
+}
+body.theme3 .header .header-theme-button p {
+  color: hsl(52deg, 100%, 62%);
+}
 .header .header-theme-button .theme-button-number {
   display: flex;
   justify-content: space-between;
-  color: white;
   padding-bottom: 5px;
 }
 .header .header-theme-button .theme-button-number p {
@@ -72,6 +101,12 @@ body {
   padding: 2px 5px;
   cursor: pointer;
 }
+body.theme2 .header .header-theme-button .buttons-themes {
+  background-color: hsl(0deg, 5%, 81%);
+}
+body.theme3 .header .header-theme-button .buttons-themes {
+  background-color: hsl(268deg, 71%, 12%);
+}
 .header .header-theme-button .buttons-themes .switch {
   width: 100%;
   height: 15px;
@@ -79,6 +114,9 @@ body {
 }
 .header .header-theme-button .buttons-themes .active-theme {
   background-color: hsl(6deg, 63%, 50%);
+}
+body.theme3 .header .header-theme-button .buttons-themes .active-theme {
+  background-color: hsl(176deg, 100%, 44%);
 }
 
 .display {
@@ -91,16 +129,28 @@ body {
   align-items: center;
   margin-bottom: 20px;
 }
+body.theme2 .display {
+  background-color: hsl(0deg, 0%, 93%);
+}
+body.theme3 .display {
+  background-color: hsl(268deg, 71%, 12%);
+}
 .display p {
   padding: 0px;
   margin: 0px;
   font-size: 30px;
   color: white;
 }
+body.theme2 .display p {
+  color: black;
+}
+body.theme3 .display p {
+  color: hsl(52deg, 100%, 62%);
+}
 
 .keyboard {
   display: flex;
-  height: 450px;
+  height: auto;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
@@ -108,6 +158,12 @@ body {
   border-radius: 15px;
   padding: 0 20px;
   padding-bottom: 20px;
+}
+body.theme2 .keyboard {
+  background-color: hsl(0deg, 5%, 81%);
+}
+body.theme3 .keyboard {
+  background-color: hsl(268deg, 71%, 12%);
 }
 .keyboard .key {
   width: 77.5px;
@@ -122,28 +178,75 @@ body {
   padding-top: 5px;
   cursor: pointer;
 }
+body.theme3 .keyboard .key {
+  background-color: hsl(268deg, 47%, 21%);
+  box-shadow: 0 5px hsl(290deg, 70%, 36%);
+}
 .keyboard .key p {
   font-size: 25px;
   padding: 0px;
   margin: 0px;
   color: hsl(221deg, 14%, 31%);
 }
+body.theme3 .keyboard .key p {
+  color: hsl(52deg, 100%, 62%);
+}
 .keyboard .key-rest {
-  width: calc(50% - 5px);
+  width: calc(50% - 10px);
   background-color: hsl(225deg, 21%, 49%);
   box-shadow: 0 5px hsl(224deg, 28%, 35%);
+}
+body.theme2 .keyboard .key-rest {
+  background-color: hsl(185deg, 42%, 37%);
+  box-shadow: 0 5px hsl(185deg, 58%, 25%);
+}
+body.theme3 .keyboard .key-rest {
+  background-color: hsl(281deg, 89%, 26%);
+  box-shadow: 0 5px hsl(290deg, 70%, 36%);
 }
 .keyboard .key-rest p {
   color: white;
   text-transform: uppercase;
   font-size: 20px;
 }
+body.theme3 .keyboard .key-rest p {
+  color: white;
+}
 .keyboard .key-equal {
-  width: calc(50% - 5px);
+  width: calc(50% - 10px);
   background-color: hsl(6deg, 63%, 50%);
   box-shadow: 0 5px hsl(6deg, 70%, 34%);
 }
+body.theme2 .keyboard .key-equal {
+  background-color: hsl(25deg, 98%, 40%);
+  box-shadow: 0 5px hsl(25deg, 99%, 27%);
+}
+body.theme3 .keyboard .key-equal {
+  background-color: hsl(176deg, 100%, 44%);
+  box-shadow: 0 5px hsl(177deg, 92%, 70%);
+}
 .keyboard .key-equal p {
+  color: white;
+}
+body.theme3 .keyboard .key-equal p {
+  color: hsl(60deg, 10%, 19%);
+}
+.keyboard .key--del {
+  background-color: hsl(225deg, 21%, 49%);
+  box-shadow: 0 5px hsl(224deg, 28%, 35%);
+}
+body.theme2 .keyboard .key--del {
+  background-color: hsl(185deg, 42%, 37%);
+  box-shadow: 0 5px hsl(185deg, 58%, 25%);
+}
+body.theme3 .keyboard .key--del {
+  background-color: hsl(281deg, 89%, 26%);
+  box-shadow: 0 5px hsl(290deg, 70%, 36%);
+}
+.keyboard .key--del p {
+  color: white;
+}
+body.theme3 .keyboard .key--del p {
   color: white;
 }
 

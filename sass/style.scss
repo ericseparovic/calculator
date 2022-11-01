@@ -22,6 +22,15 @@ body {
     align-items: flex-start;
     height: 100vh;
     font-family: 'Spartan', sans-serif;
+
+    &.theme2 {
+        background-color: $LightGray;
+    }
+
+
+    &.theme3 {
+        background-color: $VeryDarkViolet;
+    }
 }
 
 
@@ -29,6 +38,14 @@ body {
     width: 420px;
     height: 550px;
     background-color: $VeryDarkDesaturatedBlue1;
+
+    body.theme2 & {
+        background-color: $LightGray;
+    }
+
+    body.theme3 & {
+        background-color: $VeryDarkViolet;
+    }
 }
 
 
@@ -40,9 +57,27 @@ body {
     height: 80px;
     background-color: $VeryDarkDesaturatedBlue1;
 
+
+    body.theme2 & {
+        background-color: $LightGray;
+    }
+
+    body.theme3 & {
+        background-color: $VeryDarkViolet;
+    }
+
     h1 {
         color: white;
         font-size: 25px;
+
+        body.theme2 & {
+            color: black;
+        }
+
+        body.theme3 & {
+            color: $LightYellow;
+
+        }
     }
 
 
@@ -60,13 +95,24 @@ body {
             font-weight: bold;
             text-transform: uppercase;
             font-size: 10px;
+
+            body.theme2 & {
+                color: black;
+            }
+
+
+            body.theme3 & {
+                color: $LightYellow;
+            }
         }
 
         .theme-button-number {
             display: flex;
             justify-content: space-between;
-            color: white;
             padding-bottom: 5px;
+
+
+
 
             p {
                 padding: 0px;
@@ -87,6 +133,14 @@ body {
             padding: 2px 5px;
             cursor: pointer;
 
+            body.theme2 & {
+                background-color: $GrayishRed;
+            }
+
+            body.theme3 & {
+                background-color: $VeryDarkVioletBackground;
+            }
+
             .switch {
                 width: 100%;
                 height: 15px;
@@ -98,6 +152,11 @@ body {
             //Boton circulo
             .active-theme {
                 background-color: $Red;
+
+
+                body.theme3 & {
+                    background-color: $PureCyan;
+                }
             }
         }
     }
@@ -118,11 +177,28 @@ body {
     align-items: center;
     margin-bottom: 20px;
 
+    body.theme2 & {
+        background-color: $Very-LightGray;
+    }
+
+    body.theme3 & {
+        background-color: $VeryDarkVioletBackground;
+    }
+
     p {
         padding: 0px;
         margin: 0px;
         font-size: 30px;
         color: white;
+
+
+        body.theme2 & {
+            color: black;
+        }
+
+        body.theme3 & {
+            color: $LightYellow;
+        }
 
     }
 
@@ -133,7 +209,7 @@ body {
 //Estilos teclado 
 .keyboard {
     display: flex;
-    height: 450px;
+    height: auto;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -141,6 +217,15 @@ body {
     border-radius: 15px;
     padding: 0 20px;
     padding-bottom: 20px;
+
+    body.theme2 & {
+        background-color: $GrayishRed;
+    }
+
+    body.theme3 & {
+        background-color: $VeryDarkVioletBackground;
+    }
+
 
     .key {
         width: calc((350px - 40px) / 4);
@@ -156,39 +241,102 @@ body {
         cursor: pointer;
 
 
+        body.theme3 & {
+            background-color: $VeryDarkViolet;
+            box-shadow: 0 5px $DarkMagentaKeyShadow;
+        }
 
         p {
             font-size: 25px;
             padding: 0px;
             margin: 0px;
             color: $VeryDarkGrayishBlue;
+
+
+            body.theme3 & {
+                color: $LightYellow;
+            }
         }
     }
 
 
+
+
     .key-rest {
-        width: calc(50% - 5px);
+        width: calc(50% - 10px);
         background-color: $DesaturatedDarkBlue1;
         box-shadow: 0 5px $DesaturatedDarkBlue2;
+
+        body.theme2 & {
+            background-color: $DarkModerateCyan;
+            box-shadow: 0 5px $VeryDarkCyan;
+        }
+
+        body.theme3 & {
+            background-color: $DarkVioletKey;
+            box-shadow: 0 5px $DarkMagentaKeyShadow;
+        }
 
         p {
             color: white;
             text-transform: uppercase;
             font-size: 20px;
+
+            body.theme3 & {
+                color: white;
+            }
         }
 
     }
 
     .key-equal {
-        width: calc(50% - 5px);
+        width: calc(50% - 10px);
         background-color: $Red;
         box-shadow: 0 5px $RedDark;
 
+        body.theme2 & {
+            background-color: $Orange;
+            box-shadow: 0 5px $DarkOrange;
+        }
+
+        body.theme3 & {
+            background-color: $PureCyan;
+            box-shadow: 0 5px $SoftCyan;
+        }
 
         p {
             color: white;
+
+            body.theme3 & {
+                color: $VeryDarkGrayishYellow;
+            }
         }
 
+    }
+
+
+    .key--del {
+        background-color: $DesaturatedDarkBlue1 ;
+        box-shadow: 0 5px $DesaturatedDarkBlue2;
+
+
+        body.theme2 & {
+            background-color: $DarkModerateCyan;
+            box-shadow: 0 5px $VeryDarkCyan;
+        }
+
+        body.theme3 & {
+            background-color: $DarkVioletKey;
+            box-shadow: 0 5px $DarkMagentaKeyShadow;
+        }
+
+        p {
+            color: white;
+
+            body.theme3 & {
+                color: white;
+            }
+        }
     }
 }
 

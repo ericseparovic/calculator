@@ -5,6 +5,7 @@ buttons.addEventListener("click", changeTheme);
 function changeTheme(e) {
   let position = e.target.id;
   const positions = buttons.querySelectorAll(".switch");
+  const body = document.querySelector("body");
   changePositionToggle(position, positions);
 }
 
