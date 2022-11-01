@@ -2,21 +2,19 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
   <title>Frontend Mentor | Calculator app</title>
-
 </head>
 
 <body>
-
   <div class="container">
     <div class="header">
       <h1>calc</h1>
@@ -29,13 +27,13 @@
             <p>2</p>
             <p>3</p>
           </div>
-          <button type="button" class="theme-button-icon">
-            <div class="theme-button-icon-circle"></div>
-          </button>
+          <div class="buttons-themes">
+            <div id="1" class="theme-toggle"></div>
+            <div id="2" class="theme-toggle"></div>
+            <div id="3" class="theme-toggle"></div>
+          </div>
         </div>
-
       </div>
-
     </div>
     <div class="display">
       <p>0</p>
@@ -98,9 +96,7 @@
     </div>
   </div>
 
-
-
-
+  <script src="js/app.js"></script>
 </body>
 
 </html>

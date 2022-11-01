@@ -4,12 +4,15 @@ html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-  }
-  *, *:before, *:after {
+}
+
+*,
+*:before,
+*:after {
     -webkit-box-sizing: inherit;
     -moz-box-sizing: inherit;
     box-sizing: inherit;
-    }
+}
 
 
 body {
@@ -25,7 +28,6 @@ body {
 .container {
     width: 420px;
     height: 550px;
-    padding: 20px;
     background-color: $VeryDarkDesaturatedBlue1;
 }
 
@@ -65,7 +67,7 @@ body {
             justify-content: space-between;
             color: white;
             padding-bottom: 5px;
-            
+
             p {
                 padding: 0px;
                 margin: 0px;
@@ -73,8 +75,9 @@ body {
 
             }
         }
+
         //Contenedor boton ciruclo 
-        .theme-button-icon{
+        .buttons-themes {
             width: 60px;
             height: 25px;
             background-color: $VeryDarkDesaturatedBlue3;
@@ -82,19 +85,26 @@ body {
             align-items: center;
             border-radius: 15px;
             padding: 2px 5px;
+            cursor: pointer;
 
-            
-            //Boton circulo
-            .theme-button-icon-circle {
-                width: 15px;
+            .theme-toggle {
+                width: 100%;
                 height: 15px;
-                background-color: $Red;
                 border-radius: 50%;
+            }
+
+
+
+            //Boton circulo
+            .active-theme {
+                background-color: $Red;
             }
         }
     }
 
 }
+
+
 
 
 //Estilos display
@@ -116,7 +126,7 @@ body {
 
     }
 
-}   
+}
 
 
 
@@ -131,6 +141,7 @@ body {
     border-radius: 15px;
     padding: 0 20px;
     padding-bottom: 20px;
+
     .key {
         width: calc((350px - 40px) / 4);
         height: 50px;
@@ -143,7 +154,7 @@ body {
         margin-top: 20px;
         padding-top: 5px;
         cursor: pointer;
-        
+
 
 
         p {
@@ -156,7 +167,7 @@ body {
 
 
     .key-rest {
-        width:  calc(50% - 5px);
+        width: calc(50% - 5px);
         background-color: $DesaturatedDarkBlue1;
         box-shadow: 0 5px $DesaturatedDarkBlue2;
 
@@ -165,19 +176,19 @@ body {
             text-transform: uppercase;
             font-size: 20px;
         }
-        
+
     }
 
     .key-equal {
-       width:  calc(50% - 5px);
-       background-color: $Red;
-       box-shadow: 0 5px $RedDark;
+        width: calc(50% - 5px);
+        background-color: $Red;
+        box-shadow: 0 5px $RedDark;
 
-       
-       p {
-        color: white;
-       }
-       
+
+        p {
+            color: white;
+        }
+
     }
 }
 
@@ -203,30 +214,32 @@ body {
 
 
         .key-rest {
-            width:  calc(50% - 5px);    
+            width: calc(50% - 5px);
         }
-    
+
         .key-equal {
-           width:  calc(50% - 5px);
+            width: calc(50% - 5px);
         }
     }
 
-  }
+}
 
 
 
 
 button {
-  background: none;
-  border: 0;
-  color: inherit;
-  /* cursor: default; */
-  font: inherit;
-  line-height: normal;
-  overflow: visible;
-  padding: 0;
-  -webkit-user-select: none; /* for button */
-   -webkit-appearance: button; /* for input */
-     -moz-user-select: none;
-      -ms-user-select: none;
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-user-select: none;
+    /* for button */
+    -webkit-appearance: button;
+    /* for input */
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
