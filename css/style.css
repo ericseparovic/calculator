@@ -24,7 +24,7 @@ body.theme2 {
   background-color: hsl(0deg, 0%, 90%);
 }
 body.theme3 {
-  background-color: hsl(268deg, 47%, 21%);
+  background-color: hsl(268deg, 75%, 9%);
 }
 
 .container {
@@ -36,7 +36,7 @@ body.theme2 .container {
   background-color: hsl(0deg, 0%, 90%);
 }
 body.theme3 .container {
-  background-color: hsl(268deg, 47%, 21%);
+  background-color: hsl(268deg, 75%, 9%);
 }
 
 .header {
@@ -50,7 +50,7 @@ body.theme2 .header {
   background-color: hsl(0deg, 0%, 90%);
 }
 body.theme3 .header {
-  background-color: hsl(268deg, 47%, 21%);
+  background-color: hsl(268deg, 75%, 9%);
 }
 .header h1 {
   color: white;
