@@ -16,7 +16,6 @@ function changePositionSwitch(position, positions) {
   }
 
   positions.forEach((element) => {
-    console.log(element.id, position);
     if (element.id === position) {
       element.classList.add("active-theme");
     } else {
