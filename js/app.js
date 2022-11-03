@@ -1,11 +1,11 @@
-const buttons = document.querySelector(".buttons-themes");
+const buttons = document.querySelector(".switch");
 const display = document.querySelector(".display");
 
 buttons.addEventListener("click", changeTheme);
 
 function changeTheme(e) {
   let position = e.target.id;
-  const positions = buttons.querySelectorAll(".switch");
+  const positions = buttons.querySelectorAll(".switch-circule");
   const body = document.querySelector("body");
   changePositionSwitch(position, positions);
   changeColorsTheme(position, body);

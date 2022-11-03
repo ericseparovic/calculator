@@ -62,11 +62,11 @@ body.theme2 .header h1 {
 body.theme3 .header h1 {
   color: hsl(52deg, 100%, 62%);
 }
-.header .header-theme-button {
+.header .header-switch {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
 }
-.header .header-theme-button p {
+.header .header-switch p {
   padding: 0;
   margin: 0;
   color: white;
@@ -75,25 +75,33 @@ body.theme3 .header h1 {
   text-transform: uppercase;
   font-size: 10px;
 }
-body.theme2 .header .header-theme-button p {
+body.theme2 .header .header-switch p {
   color: black;
 }
-body.theme3 .header .header-theme-button p {
+body.theme3 .header .header-switch p {
   color: hsl(52deg, 100%, 62%);
 }
-.header .header-theme-button .theme-button-number {
+.header .header-switch .header-switch-number {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding-bottom: 5px;
+  letter-spacing: 9px;
 }
-.header .header-theme-button .theme-button-number p {
+.header .header-switch .header-switch-number p {
   padding: 0px;
   margin: 0px;
   font-size: 10px;
 }
-.header .header-theme-button .buttons-themes {
-  width: 60px;
-  height: 25px;
+.header .header-switch .header-switch-title {
+  display: flex;
+  align-items: center;
+}
+.header .header-switch .header-switch-title p {
+  font-size: 12px;
+}
+.header .header-switch .switch {
+  width: 50px;
+  height: 20px;
   background-color: hsl(224deg, 36%, 15%);
   display: flex;
   align-items: center;
@@ -101,21 +109,21 @@ body.theme3 .header .header-theme-button p {
   padding: 2px 5px;
   cursor: pointer;
 }
-body.theme2 .header .header-theme-button .buttons-themes {
+body.theme2 .header .header-switch .switch {
   background-color: hsl(0deg, 5%, 81%);
 }
-body.theme3 .header .header-theme-button .buttons-themes {
+body.theme3 .header .header-switch .switch {
   background-color: hsl(268deg, 71%, 12%);
 }
-.header .header-theme-button .buttons-themes .switch {
-  width: 100%;
-  height: 15px;
+.header .header-switch .switch .switch-circule {
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
   border-radius: 50%;
 }
-.header .header-theme-button .buttons-themes .active-theme {
+.header .header-switch .switch .active-theme {
   background-color: hsl(6deg, 63%, 50%);
 }
-body.theme3 .header .header-theme-button .buttons-themes .active-theme {
+body.theme3 .header .header-switch .switch .active-theme {
   background-color: hsl(176deg, 100%, 44%);
 }
 
