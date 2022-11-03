@@ -18,7 +18,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   height: 100vh;
-  font-family: "Spartan", sans-serif;
+  font-family: "League Spartan", sans-serif;
 }
 body.theme2 {
   background-color: hsl(0deg, 0%, 90%);
@@ -123,17 +123,27 @@ body.theme3 .header .header-theme-button .buttons-themes .active-theme {
   height: 100px;
   border-radius: 10px;
   background-color: hsl(224deg, 36%, 15%);
-  padding: 30px;
+  padding: 10px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 20px;
+  border: none;
+  color: white;
+  outline: none;
+  text-align: right;
+  width: 100%;
+  font-size: 45px;
+  font-family: "League Spartan", sans-serif;
+  letter-spacing: 2px;
 }
 body.theme2 .display {
   background-color: hsl(0deg, 0%, 93%);
+  color: hsl(268deg, 71%, 12%);
 }
 body.theme3 .display {
   background-color: hsl(268deg, 71%, 12%);
+  color: hsl(52deg, 100%, 62%);
 }
 .display p {
   padding: 0px;

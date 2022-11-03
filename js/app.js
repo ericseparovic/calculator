@@ -1,4 +1,5 @@
 const buttons = document.querySelector(".buttons-themes");
+const display = document.querySelector(".display");
 
 buttons.addEventListener("click", changeTheme);
 
