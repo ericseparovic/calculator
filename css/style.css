@@ -16,7 +16,7 @@ body {
   background-color: hsl(222deg, 26%, 31%);
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   height: 100vh;
   font-family: "League Spartan", sans-serif;
 }
