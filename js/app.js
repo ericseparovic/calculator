@@ -1,7 +1,9 @@
 const buttons = document.querySelector(".switch");
 const display = document.querySelector(".display");
+const keyboard = document.querySelector(".keyboard");
 
 buttons.addEventListener("click", changeTheme);
+keyboard.addEventListener("click", getValue);
 
 function changeTheme(e) {
   let position = e.target.id;
@@ -42,4 +44,8 @@ function changeColorsTheme(position, body) {
     body.classList.add("theme3");
     body.classList.remove("theme2");
   }
+}
+
+function getValue(e) {
+  console.log(e.target.id);
 }

@@ -259,23 +259,17 @@ body {
         margin-top: 20px;
         padding-top: 5px;
         cursor: pointer;
-
+        color: $VeryDarkGrayishBlue;
+        font-size: 25px;
 
         body.theme3 & {
             background-color: $VeryDarkViolet;
             box-shadow: 0 5px $DarkMagentaKeyShadow;
         }
 
-        p {
-            font-size: 25px;
-            padding: 0px;
-            margin: 0px;
-            color: $VeryDarkGrayishBlue;
 
-
-            body.theme3 & {
-                color: $LightYellow;
-            }
+        body.theme3 & {
+            color: $LightYellow;
         }
     }
 
@@ -286,6 +280,8 @@ body {
         width: calc(50% - 10px);
         background-color: $DesaturatedDarkBlue1;
         box-shadow: 0 5px $DesaturatedDarkBlue2;
+        color: white;
+        font-size: 20px;
 
         body.theme2 & {
             background-color: $DarkModerateCyan;
@@ -295,24 +291,17 @@ body {
         body.theme3 & {
             background-color: $DarkVioletKey;
             box-shadow: 0 5px $DarkMagentaKeyShadow;
-        }
-
-        p {
             color: white;
-            text-transform: uppercase;
-            font-size: 20px;
-
-            body.theme3 & {
-                color: white;
-            }
         }
-
     }
 
     .key-equal {
         width: calc(50% - 10px);
         background-color: $Red;
         box-shadow: 0 5px $RedDark;
+        color: white;
+        font-size: 20px;
+
 
         body.theme2 & {
             background-color: $Orange;
@@ -322,15 +311,9 @@ body {
         body.theme3 & {
             background-color: $PureCyan;
             box-shadow: 0 5px $SoftCyan;
+            color: $VeryDarkGrayishYellow;
         }
 
-        p {
-            color: white;
-
-            body.theme3 & {
-                color: $VeryDarkGrayishYellow;
-            }
-        }
 
     }
 
@@ -338,6 +321,9 @@ body {
     .key--del {
         background-color: $DesaturatedDarkBlue1 ;
         box-shadow: 0 5px $DesaturatedDarkBlue2;
+        color: white;
+        font-size: 20px;
+
 
 
         body.theme2 & {
@@ -348,14 +334,7 @@ body {
         body.theme3 & {
             background-color: $DarkVioletKey;
             box-shadow: 0 5px $DarkMagentaKeyShadow;
-        }
-
-        p {
             color: white;
-
-            body.theme3 & {
-                color: white;
-            }
         }
     }
 }

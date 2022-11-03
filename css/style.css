@@ -195,24 +195,22 @@ body.theme3 .keyboard {
   margin-top: 20px;
   padding-top: 5px;
   cursor: pointer;
+  color: hsl(221deg, 14%, 31%);
+  font-size: 25px;
 }
 body.theme3 .keyboard .key {
   background-color: hsl(268deg, 47%, 21%);
   box-shadow: 0 5px hsl(290deg, 70%, 36%);
 }
-.keyboard .key p {
-  font-size: 25px;
-  padding: 0px;
-  margin: 0px;
-  color: hsl(221deg, 14%, 31%);
-}
-body.theme3 .keyboard .key p {
+body.theme3 .keyboard .key {
   color: hsl(52deg, 100%, 62%);
 }
 .keyboard .key-rest {
   width: calc(50% - 10px);
   background-color: hsl(225deg, 21%, 49%);
   box-shadow: 0 5px hsl(224deg, 28%, 35%);
+  color: white;
+  font-size: 20px;
 }
 body.theme2 .keyboard .key-rest {
   background-color: hsl(185deg, 42%, 37%);
@@ -221,19 +219,14 @@ body.theme2 .keyboard .key-rest {
 body.theme3 .keyboard .key-rest {
   background-color: hsl(281deg, 89%, 26%);
   box-shadow: 0 5px hsl(290deg, 70%, 36%);
-}
-.keyboard .key-rest p {
-  color: white;
-  text-transform: uppercase;
-  font-size: 20px;
-}
-body.theme3 .keyboard .key-rest p {
   color: white;
 }
 .keyboard .key-equal {
   width: calc(50% - 10px);
   background-color: hsl(6deg, 63%, 50%);
   box-shadow: 0 5px hsl(6deg, 70%, 34%);
+  color: white;
+  font-size: 20px;
 }
 body.theme2 .keyboard .key-equal {
   background-color: hsl(25deg, 98%, 40%);
@@ -242,16 +235,13 @@ body.theme2 .keyboard .key-equal {
 body.theme3 .keyboard .key-equal {
   background-color: hsl(176deg, 100%, 44%);
   box-shadow: 0 5px hsl(177deg, 92%, 70%);
-}
-.keyboard .key-equal p {
-  color: white;
-}
-body.theme3 .keyboard .key-equal p {
   color: hsl(60deg, 10%, 19%);
 }
 .keyboard .key--del {
   background-color: hsl(225deg, 21%, 49%);
   box-shadow: 0 5px hsl(224deg, 28%, 35%);
+  color: white;
+  font-size: 20px;
 }
 body.theme2 .keyboard .key--del {
   background-color: hsl(185deg, 42%, 37%);
@@ -260,11 +250,6 @@ body.theme2 .keyboard .key--del {
 body.theme3 .keyboard .key--del {
   background-color: hsl(281deg, 89%, 26%);
   box-shadow: 0 5px hsl(290deg, 70%, 36%);
-}
-.keyboard .key--del p {
-  color: white;
-}
-body.theme3 .keyboard .key--del p {
   color: white;
 }
 
