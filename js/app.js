@@ -3,7 +3,7 @@ const display = document.querySelector(".display");
 const keyboard = document.querySelector(".keyboard");
 
 buttons.addEventListener("click", changeTheme);
-keyboard.addEventListener("click", getValue);
+keyboard.addEventListener("click", showDisplay);
 
 function changeTheme(e) {
   let position = e.target.id;
@@ -46,6 +46,23 @@ function changeColorsTheme(position, body) {
   }
 }
 
-function getValue(e) {
-  console.log(e.target.id);
+let htmlDisplay = "";
+
+function showDisplay(e) {
+  if (e.target.value === undefined) {
+    return;
+  }
+  if (e.target.value === "del") {
+    htmlDisplay = display.value.slice(0, -1);
+    display.value = htmlDisplay;
+    return;
+  }
+  if (e.target.value === "reset") {
+    htmlDisplay = "";
+    display.value = htmlDisplay;
+    return;
+  }
+
+  htmlDisplay += e.target.value;
+  display.value = htmlDisplay;
 }
